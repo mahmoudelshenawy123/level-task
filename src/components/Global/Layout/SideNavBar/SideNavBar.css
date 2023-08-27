@@ -1,23 +1,23 @@
-.portal__side-navbar-content-wrapper--closed .logo-letters-path{
+.side-navbar__content-wrapper--closed .logo-letters-path{
     opacity: 0;
     transition: var(--transition);
 }
-.portal__side-navbar-content-wrapper--closed:hover .logo-letters-path{
+.side-navbar__content-wrapper--closed:hover .logo-letters-path{
     opacity: 1;
 }
-.portal__side-navbar-content-wrapper--closed .logo-circle{
+.side-navbar__content-wrapper--closed .logo-circle{
     transition: var(--transition);
 }
-.portal__side-navbar-content-wrapper--closed:hover .logo-circle{
+.side-navbar__content-wrapper--closed:hover .logo-circle{
     transform: translateX(0px);
 }
-body[dir='rtl'] .portal__side-navbar-content-wrapper--closed .logo-circle{
+body[dir='rtl'] .side-navbar__content-wrapper--closed .logo-circle{
     transform: translateX(110px);
 }
-body[dir='rtl'] .portal__side-navbar-content-wrapper--closed:hover .logo-circle{
+body[dir='rtl'] .side-navbar__content-wrapper--closed:hover .logo-circle{
     transform: translateX(0px);
 }
-.accordion-button:not(.collapsed) .portal__accordion-header-icon{
+.accordion-button:not(.collapsed) .side-navbar__accordion-header-icon{
     transform: rotateX(180deg);
 }
 @keyframes rotateLogoCircle {

@@ -23,7 +23,7 @@ function SideNavBar({isSideMenuOpen,closeSideMenu}) {
     }
   },[isSideMenuOpen])
   return (
-    <div className={`${styles['portal__side-navbar-content-wrapper']} ${isSideMenuOpen?'':styles['portal__side-navbar-content-wrapper--closed']} ${isSideMenuOpen?'':'portal__side-navbar-content-wrapper--closed'} `}>
+    <div className={`${styles['side-navbar__content-wrapper']} ${isSideMenuOpen?'':styles['side-navbar__content-wrapper--closed']} ${isSideMenuOpen?'':'side-navbar__content-wrapper--closed'} `}>
       <Accordion ref={accordionRef} className={styles['navbar__accordion']}>
         <div className={styles['navbar__logo-wrapper']}>
             <NavLink to='/' className={styles['navbar__logo-link']}>
@@ -35,103 +35,103 @@ function SideNavBar({isSideMenuOpen,closeSideMenu}) {
         </div>
         <div className={styles['navbar__section-wrapper']}>
           <h3 className={styles['navbar__section-wrapper-title']}>{t('Home')}</h3>
-          <Accordion.Item eventKey="0" className={styles['portal__accordion-item']}>
-              <Accordion.Header className={`${styles['portal__side-navbar-item-wrapper']} ${window.location.pathname==='/' ?styles['portal__side-navbar-item-wrapper--active']:''}`}>
-                <Link to='/' className={styles['portal__side-nav-link']}>
-                  <div className={styles['portal__accordion-header-content']}>
-                    <div className={styles['portal__accordion-header-item-cont']}>
-                      <div className={`${styles['portal__side-navbar-item-icon-wrapper']}`}>
-                        <HomeMenuIcon className={`${styles['portal__side-navbar-item-icon']}`}/>
+          <Accordion.Item eventKey="0" className={styles['side-navbar__accordion-item']}>
+              <Accordion.Header className={`${styles['side-navbar__item-wrapper']} ${window.location.pathname==='/' ?styles['side-navbar__item-wrapper--active']:''}`}>
+                <Link to='/' className={styles['side-navbar__side-nav-link']}>
+                  <div className={styles['side-navbar__accordion-header-content']}>
+                    <div className={styles['side-navbar__accordion-header-item-cont']}>
+                      <div className={`${styles['side-navbar__item-icon-wrapper']}`}>
+                        <HomeMenuIcon className={`${styles['side-navbar__item-icon']}`}/>
                       </div>
-                      <span className={styles['portal__accordion-header']}>{t('Home')}</span>
+                      <span className={styles['side-navbar__accordion-header']}>{t('Home')}</span>
                     </div>
                   </div>
                 </Link>
               </Accordion.Header>
           </Accordion.Item>
 
-          <Accordion.Item eventKey="1" className={styles['portal__accordion-item']}>
-              <Accordion.Header  className={`${styles['portal__side-navbar-item-wrapper']} ${window.location.pathname==='/portal' ?styles['portal__side-navbar-item-wrapper--active']:''}`}>
-                <div className={styles['portal__accordion-header-content']}>
-                  <div className={styles['portal__accordion-header-item-cont']}>
-                    <div className={`${styles['portal__side-navbar-item-icon-wrapper']}`}>
-                      <HomeMenuIcon className={`${styles['portal__side-navbar-item-icon']}`}/>
+          <Accordion.Item eventKey="1" className={styles['side-navbar__accordion-item']}>
+              <Accordion.Header  className={`${styles['side-navbar__item-wrapper']} ${window.location.pathname==='/side-navbar' ?styles['side-navbar__item-wrapper--active']:''}`}>
+                <div className={styles['side-navbar__accordion-header-content']}>
+                  <div className={styles['side-navbar__accordion-header-item-cont']}>
+                    <div className={`${styles['side-navbar__item-icon-wrapper']}`}>
+                      <HomeMenuIcon className={`${styles['side-navbar__item-icon']}`}/>
                     </div>
-                    <span className={styles['portal__accordion-header']}>
+                    <span className={styles['side-navbar__accordion-header']}>
                       {t('Menu Number')} 1
-                      <DownArrowIcon className={`${styles['portal__accordion-header-icon']} portal__accordion-header-icon`}/>
+                      <DownArrowIcon className={`${styles['side-navbar__accordion-header-icon']} side-navbar__accordion-header-icon`}/>
                     </span>
                   </div>
                 </div>
               </Accordion.Header>
-              <Accordion.Body className={styles['portal__accordion-body']}>
-                <ul className={styles['portal__accordion-list']}>
-                  <li className={styles['portal__accordion-list-item']}>
-                    <Link to='/' className={styles['portal__side-navbar-side-link']}>{t('Menu Mini')}</Link>
+              <Accordion.Body className={styles['side-navbar__accordion-body']}>
+                <ul className={styles['side-navbar__accordion-list']}>
+                  <li className={styles['side-navbar__accordion-list-item']}>
+                    <Link to='/' className={styles['side-navbar__side-link']}>{t('Menu Mini')}</Link>
                   </li>
-                  <li className={styles['portal__accordion-list-item']}>
-                    <Link to='/' className={styles['portal__side-navbar-side-link']}>{t('Menu Mini')}</Link>
+                  <li className={styles['side-navbar__accordion-list-item']}>
+                    <Link to='/' className={styles['side-navbar__side-link']}>{t('Menu Mini')}</Link>
                   </li>
-                  <li className={styles['portal__accordion-list-item']}>
-                    <Link to='/' className={styles['portal__side-navbar-side-link']}>{t('Menu Mini')}</Link>
+                  <li className={styles['side-navbar__accordion-list-item']}>
+                    <Link to='/' className={styles['side-navbar__side-link']}>{t('Menu Mini')}</Link>
                   </li>
                 </ul>
               </Accordion.Body>
           </Accordion.Item>
 
-          <Accordion.Item eventKey="2" className={styles['portal__accordion-item']}>
-              <Accordion.Header  className={`${styles['portal__side-navbar-item-wrapper']} ${window.location.pathname==='/portal' ?styles['portal__side-navbar-item-wrapper--active']:''}`}>
-                <div className={styles['portal__accordion-header-content']}>
-                  <div className={styles['portal__accordion-header-item-cont']}>
-                    <div className={`${styles['portal__side-navbar-item-icon-wrapper']}`}>
-                      <HomeMenuIcon className={`${styles['portal__side-navbar-item-icon']}`}/>
+          <Accordion.Item eventKey="2" className={styles['side-navbar__accordion-item']}>
+              <Accordion.Header  className={`${styles['side-navbar__item-wrapper']} ${window.location.pathname==='/side-navbar' ?styles['side-navbar__item-wrapper--active']:''}`}>
+                <div className={styles['side-navbar__accordion-header-content']}>
+                  <div className={styles['side-navbar__accordion-header-item-cont']}>
+                    <div className={`${styles['side-navbar__item-icon-wrapper']}`}>
+                      <HomeMenuIcon className={`${styles['side-navbar__item-icon']}`}/>
                     </div>
-                    <span className={styles['portal__accordion-header']}>
+                    <span className={styles['side-navbar__accordion-header']}>
                       {t('Menu Number')} 2
-                      <DownArrowIcon className={`${styles['portal__accordion-header-icon']} portal__accordion-header-icon`}/>
+                      <DownArrowIcon className={`${styles['side-navbar__accordion-header-icon']} side-navbar__accordion-header-icon`}/>
                     </span>
                   </div>
                 </div>
               </Accordion.Header>
-              <Accordion.Body className={styles['portal__accordion-body']}>
-                <ul className={styles['portal__accordion-list']}>
-                  <li className={styles['portal__accordion-list-item']}>
-                    <Link to='/' className={styles['portal__side-navbar-side-link']}>{t('Menu Mini')}</Link>
+              <Accordion.Body className={styles['side-navbar__accordion-body']}>
+                <ul className={styles['side-navbar__accordion-list']}>
+                  <li className={styles['side-navbar__accordion-list-item']}>
+                    <Link to='/' className={styles['side-navbar__side-link']}>{t('Menu Mini')}</Link>
                   </li>
-                  <li className={styles['portal__accordion-list-item']}>
-                    <Link to='/' className={styles['portal__side-navbar-side-link']}>{t('Menu Mini')}</Link>
+                  <li className={styles['side-navbar__accordion-list-item']}>
+                    <Link to='/' className={styles['side-navbar__side-link']}>{t('Menu Mini')}</Link>
                   </li>
-                  <li className={styles['portal__accordion-list-item']}>
-                    <Link to='/' className={styles['portal__side-navbar-side-link']}>{t('Menu Mini')}</Link>
+                  <li className={styles['side-navbar__accordion-list-item']}>
+                    <Link to='/' className={styles['side-navbar__side-link']}>{t('Menu Mini')}</Link>
                   </li>
                 </ul>
               </Accordion.Body>
           </Accordion.Item>
 
-          <Accordion.Item eventKey="3" className={styles['portal__accordion-item']}>
-              <Accordion.Header  className={`${styles['portal__side-navbar-item-wrapper']} ${window.location.pathname==='/portal' ?styles['portal__side-navbar-item-wrapper--active']:''}`}>
-                <div className={styles['portal__accordion-header-content']}>
-                  <div className={styles['portal__accordion-header-item-cont']}>
-                    <div className={`${styles['portal__side-navbar-item-icon-wrapper']}`}>
-                      <HomeMenuIcon className={`${styles['portal__side-navbar-item-icon']}`}/>
+          <Accordion.Item eventKey="3" className={styles['side-navbar__accordion-item']}>
+              <Accordion.Header  className={`${styles['side-navbar__item-wrapper']} ${window.location.pathname==='/side-navbar' ?styles['side-navbar__item-wrapper--active']:''}`}>
+                <div className={styles['side-navbar__accordion-header-content']}>
+                  <div className={styles['side-navbar__accordion-header-item-cont']}>
+                    <div className={`${styles['side-navbar__item-icon-wrapper']}`}>
+                      <HomeMenuIcon className={`${styles['side-navbar__item-icon']}`}/>
                     </div>
-                    <span className={styles['portal__accordion-header']}>
+                    <span className={styles['side-navbar__accordion-header']}>
                       {t('Menu Number')}
-                      <DownArrowIcon className={`${styles['portal__accordion-header-icon']} portal__accordion-header-icon`}/>
+                      <DownArrowIcon className={`${styles['side-navbar__accordion-header-icon']} side-navbar__accordion-header-icon`}/>
                     </span>
                   </div>
                 </div>
               </Accordion.Header>
-              <Accordion.Body className={styles['portal__accordion-body']}>
-                <ul className={styles['portal__accordion-list']}>
-                  <li className={styles['portal__accordion-list-item']}>
-                    <Link to='/' className={styles['portal__side-navbar-side-link']}>{t('Menu Mini')}</Link>
+              <Accordion.Body className={styles['side-navbar__accordion-body']}>
+                <ul className={styles['side-navbar__accordion-list']}>
+                  <li className={styles['side-navbar__accordion-list-item']}>
+                    <Link to='/' className={styles['side-navbar__side-link']}>{t('Menu Mini')}</Link>
                   </li>
-                  <li className={styles['portal__accordion-list-item']}>
-                    <Link to='/' className={styles['portal__side-navbar-side-link']}>{t('Menu Mini')}</Link>
+                  <li className={styles['side-navbar__accordion-list-item']}>
+                    <Link to='/' className={styles['side-navbar__side-link']}>{t('Menu Mini')}</Link>
                   </li>
-                  <li className={styles['portal__accordion-list-item']}>
-                    <Link to='/' className={styles['portal__side-navbar-side-link']}>{t('Menu Mini')}</Link>
+                  <li className={styles['side-navbar__accordion-list-item']}>
+                    <Link to='/' className={styles['side-navbar__side-link']}>{t('Menu Mini')}</Link>
                   </li>
                 </ul>
               </Accordion.Body>
@@ -140,30 +140,30 @@ function SideNavBar({isSideMenuOpen,closeSideMenu}) {
     
         <div className={styles['navbar__section-wrapper']}>
           <h3 className={`${styles['navbar__section-wrapper-title']} ${styles['navbar__section-wrapper-title--margin']}`}>{t('Account')}</h3>
-          <Accordion.Item eventKey="5" className={styles['portal__accordion-item']}>
-              <Accordion.Header className={`${styles['portal__side-navbar-item-wrapper']} ${window.location.pathname==='/help' ?styles['portal__side-navbar-item-wrapper--active']:''}`}>
-                <Link to='/' className={styles['portal__side-nav-link']}>
-                  <div className={styles['portal__accordion-header-content']}>
-                    <div className={styles['portal__accordion-header-item-cont']}>
-                      <div className={`${styles['portal__side-navbar-item-icon-wrapper']}`}>
-                        <HelpMenuIcon className={`${styles['portal__side-navbar-item-icon']}`}/>
+          <Accordion.Item eventKey="5" className={styles['side-navbar__accordion-item']}>
+              <Accordion.Header className={`${styles['side-navbar__item-wrapper']} ${window.location.pathname==='/help' ?styles['side-navbar__item-wrapper--active']:''}`}>
+                <Link to='/' className={styles['side-navbar__side-nav-link']}>
+                  <div className={styles['side-navbar__accordion-header-content']}>
+                    <div className={styles['side-navbar__accordion-header-item-cont']}>
+                      <div className={`${styles['side-navbar__item-icon-wrapper']}`}>
+                        <HelpMenuIcon className={`${styles['side-navbar__item-icon']}`}/>
                       </div>
-                      <span className={styles['portal__accordion-header']}>{t('Help')}</span>
+                      <span className={styles['side-navbar__accordion-header']}>{t('Help')}</span>
                     </div>
                   </div>
                 </Link>
               </Accordion.Header>
           </Accordion.Item>
 
-          <Accordion.Item eventKey="6" className={styles['portal__accordion-item']}>
-              <Accordion.Header className={`${styles['portal__side-navbar-item-wrapper']} ${window.location.pathname==='/settings' ?styles['portal__side-navbar-item-wrapper--active']:''}`}>
-                <Link to='/' className={styles['portal__side-nav-link']}>
-                  <div className={styles['portal__accordion-header-content']}>
-                    <div className={styles['portal__accordion-header-item-cont']}>
-                      <div className={`${styles['portal__side-navbar-item-icon-wrapper']}`}>
-                        <SettingMenuIcon className={`${styles['portal__side-navbar-item-icon']}`}/>
+          <Accordion.Item eventKey="6" className={styles['side-navbar__accordion-item']}>
+              <Accordion.Header className={`${styles['side-navbar__item-wrapper']} ${window.location.pathname==='/settings' ?styles['side-navbar__item-wrapper--active']:''}`}>
+                <Link to='/' className={styles['side-navbar__side-nav-link']}>
+                  <div className={styles['side-navbar__accordion-header-content']}>
+                    <div className={styles['side-navbar__accordion-header-item-cont']}>
+                      <div className={`${styles['side-navbar__item-icon-wrapper']}`}>
+                        <SettingMenuIcon className={`${styles['side-navbar__item-icon']}`}/>
                       </div>
-                      <span className={styles['portal__accordion-header']}>{t('Settings')}</span>
+                      <span className={styles['side-navbar__accordion-header']}>{t('Settings')}</span>
                     </div>
                   </div>
                 </Link>
