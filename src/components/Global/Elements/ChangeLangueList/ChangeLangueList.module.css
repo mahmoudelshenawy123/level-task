@@ -1,0 +1,21 @@
+
+.language-button{
+    font-family: 'CairoSemiBold';
+    background-color: transparent;
+    font-size: 19px;
+}
+.navbar-bottom{
+    background-color: var(--main-color);
+    height: 80px;
+}
+.language-button--active{
+    color: var(--main-color);
+}
+.language-wrapper--responsive .language-button--active{
+    color: white;
+}
+@media (max-width:992px){
+    .language-button--active{
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,96 @@
+.users-table__header-settings{
+    width: 162px;
+    padding: 11px 11px 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 40px;
+    background-color: white;
+    right: 30px;
+    box-shadow: 0px 10.73493766784668px 23.855417251586914px 0px #7090B01F;
+    transition: var(--transition);
+    opacity: 0;
+    transform: translateY(20px);
+    display: none;
+}
+body[dir='rtl'] .users-table__header-settings{
+    left: 30px;
+    right:initial
+}
+.users-table__header-settings--active{
+    opacity: 1;
+    transform: translateY(0px);
+    display: initial;
+}
+@keyframes toggleAppearMenu {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+        display: none;
+    }
+    to{
+        transform: translateY(0px)!important;
+        opacity: 1!important;
+        display: initial!important;
+    }
+}
+@keyframes toggleHideMenu {
+    from{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: translateY(20px);
+        display: none;
+    }
+}
+.users-table__header-settings-title{
+    font-size: 9.542px;
+    color:#2E2E2E;
+    font-family: 'CairoBold';
+    margin-bottom: 11px;
+}
+.users-table__header-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:7.75px 8.35px;
+    border-bottom: 0.6px solid #E1E6EE;
+}
+.users-table__header-item:last-of-type{
+    border-bottom: 0;
+}
+.users-table__header-item-title-wrapper{
+    display: flex;
+    align-items: center;
+    gap:11px
+}
+.users-table__header-item-title{
+    color:#6C6C6C;
+    font-size: 8.35px;
+}
+.users-table__header-item-input{
+    width:9.93px;
+    height:9.93px;
+    border-radius: 3px;
+    display: flex;
+    background-color: white;
+    border: 0.58px solid #E0E3E9
+}
+.users-table__header-item-input:checked{
+    display: none;
+}
+.users-table__header-item-label{
+    width:9.93px;
+    height:9.93px;
+    background-color: #0771DE;
+    border-radius: 3px;
+    border: 0.58px solid #0771DE;
+    display: none;
+}
+.users-table__header-item-input:checked ~ .users-table__header-item-label{
+    display: flex;
+}
+.users-table__header-item-label-icon path{
+    fill:white
+}

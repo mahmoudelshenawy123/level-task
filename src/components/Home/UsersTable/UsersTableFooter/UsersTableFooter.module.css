@@ -1,0 +1,59 @@
+.users-table__footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:15px;
+}
+.users-table__footer-total-wrapper{
+    display:flex;
+    align-items: center;
+    gap:5.7px;
+    color: #333;
+    font-size: 8.075px;
+}
+.users-table__footer-total{
+    width: 40.38px;
+    height: 24.23px;
+    background-color: white;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    padding: 0 8px;
+    font-size: 8.08px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='9' viewBox='0 0 24 24' width='9' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+}
+.users-table__footer-pagination-wrapper{
+    display: flex;
+    align-items: center;
+    gap:5px
+}
+.users-table__footer-pagination-arrow-button{
+    width: 20.76px;
+    height: 20.76px;
+    border-radius: 3px;
+    font-size: 10.38px;
+    background-color: transparent;
+}
+.users-table__footer-pagination-button{
+    width: 20.76px;
+    height: 20.76px;
+    border-radius: 3px;
+    font-size: 10.38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    font-family: 'CairoBold';
+    color:#7E8299;
+    transition: var(--transition);
+}
+.users-table__footer-pagination-button--active{
+    background-color: #0771DE;
+    color:white
+}
+.users-table__footer-pagination-button--active:hover{
+    opacity: .7;
+}

@@ -1,0 +1,72 @@
+.users-table__header{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    margin-top:17px;
+    margin-bottom:17px;
+}
+.users-table__header-input-wrapper{
+    display:flex;
+    position: relative;
+    padding-left: 30px;
+    font-size:10px;
+    color: #92A1AD66;
+    border: 1px solid #92A1AD66;
+    border-radius: 8px;
+    width: 277px;
+    height: 36px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+body[dir='rtl'] .users-table__header-input-wrapper{
+    padding-left: initial;
+    padding-right: 30px;
+}
+.users-table__header-input-icon{
+    position: absolute;
+    top:50%;
+    left: 11px;
+    transform: translateY(-50%);
+}
+body[dir='rtl'] .users-table__header-input-icon{
+    left: initial;
+    right: 11px;
+    transform: translateY(-50%);
+}
+.users-table__header-input{
+    background-color: #FFFFFF;
+    border: 0;
+    outline: 0;
+    height:100%;
+    width: 100%;
+}
+.users-table__header-button{
+    width:36px;
+    height:36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 0.75px solid #92A1AD66;
+}
+.users-table__header-add-button{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    background-color: #FEEE00;
+    width:108px;
+    height:36px;
+    border-radius: 8px;
+    font-family: 'CairoMedium';
+    transition: var(--transition);
+}
+.users-table__header-add-button:hover{
+    opacity: .7;
+}
+body[dir='rtl'] .users-table__header-add-button{
+    margin-left: initial;
+    margin-right: auto;
+}

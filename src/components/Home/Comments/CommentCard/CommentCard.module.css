@@ -1,0 +1,86 @@
+.comments__item{
+    border-radius: 11px;
+    background-color:#F2F5F1;
+    padding:17px 14px 14px;
+    cursor:grab;
+}
+.comments__item-title{
+    font-size:10.5px;
+    color:var(--text-color);
+    font-family: 'CairoMedium';
+    margin-bottom: 12.2px;
+}
+.comments__item-info{
+    display: flex;
+    align-items: center;
+    gap:4.5px;
+    margin-bottom: 18px;
+    color:var(--text-color);
+    font-size: 10.5px;
+}
+.comments__item-info-icon path{
+    fill:var(--text-color)
+}
+.comments__item-info-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.comments__item-user-info{
+    display: flex;
+    align-items: center;
+    gap:3.25px;
+    color:var(--text-color);
+}  
+.comments__user-image{
+    width: 26.25px;
+    height: 26.269px;
+    border-radius: 50%;
+}
+.comments__link{
+    background-color: white;
+    width: 38.25px;
+    height: 31.5px;
+    border-radius: 11.25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: var(--transition);
+    position: relative;
+}
+.comments__link:hover{
+    background-color: #1c1c28;
+}
+.comments__link-icon--light{
+    transform: translate(-400%,-50%) rotate(180deg);
+    transition: var(--transition);
+    position:absolute;
+    top: 50%;
+}
+.comments__link-icon--light path{
+    stroke: white;
+}
+body[dir='rtl'] .comments__link-icon--light{
+    transform: translate(400%,-50%) rotate(0);
+}
+
+.comments__link:hover .comments__link-icon{
+    transform: translateX(400%) rotate(180deg);
+}
+.comments__link:hover .comments__link-icon--light{
+    transform: translate(0%,-50%) rotate(180deg);
+}
+body[dir='rtl'] .comments__link:hover .comments__link-icon--light{
+    transform: translate(0%,-50%) rotate(0);
+}
+.comments__link-icon{
+    transform: rotate(180deg);
+    transition: var(--transition);
+}
+body[dir='rtl'] .comments__link-icon{
+    transform: rotate(0);
+}
+body[dir='rtl'] .comments__link:hover .comments__link-icon{
+    transform: translateX(-400%) rotate(0);
+}

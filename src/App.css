@@ -1,0 +1,88 @@
+:root{
+  --main-color:#FEEE00;
+  --transition:all .3s linear;
+  --main-background-color:#F5F5F5;
+  --main-text-color:#000000;
+}
+@font-face {
+  font-family: CairoRegular;
+  src: url(assets/fonts/cairo/Cairo-Regular.ttf);
+}
+@font-face {
+  font-family: CairoSemiBold;
+  src: url(assets/fonts/cairo/Cairo-SemiBold.ttf);
+}
+@font-face {
+  font-family: CairoBold;
+  src: url(assets/fonts/cairo/Cairo-Bold.ttf);
+}
+@font-face {
+  font-family: CairoMedium;
+  src: url(assets/fonts/cairo/Cairo-Medium.ttf);
+}
+htmL{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body{
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  background-color:#F6F6F6;
+  font-family:CairoRegular;
+}
+button{
+  border: 0 !important;;
+  outline: 0 !important;;
+}
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration:none;
+}
+p{
+  margin: 0;
+}
+::-webkit-scrollbar{
+  width: 14px;
+}
+::-webkit-scrollbar-track{
+  background: #dde1e5; 
+  overflow:hidden
+}
+::-webkit-scrollbar-thumb{
+  background: var(--main-color);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: var(--main-color);
+}
+.form-control ,.form-control:focus ,.form-control:focus-visible ,.form-select:focus{
+  box-shadow: none;
+}
+.form-select:focus{
+  border-color: black;
+}
+body[dir='rtl'] select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 1%;
+  background-position-y: 50%;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 50%;
+}
+.app{
+  overflow-x: hidden;
+} 
